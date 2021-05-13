@@ -114,7 +114,7 @@ namespace OpenRiaServices.DomainServices.Client
         {
 
 #if NETSTANDARD
-            return new SoapDomainClientFactory();
+            return new WebAssemblyDomainClientFactory();
 #else
             return new WebDomainClientFactory();
 #endif

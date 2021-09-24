@@ -24,6 +24,7 @@
     <Reference Include="WindowsBase" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
   </ItemGroup>
   
   <ItemGroup>
@@ -54,7 +55,7 @@
     <!-- Disable obsolete warning (primarily AssociationAttribute) -->
     <NoWarn>$(NoWarn);CS0618</NoWarn>
     <SignAssembly>false</SignAssembly>
-    <DefineConstants>$(DefineConstants);OPENSILVER</DefineConstants>
+    <DefineConstants>$(DefineConstants);OPENSILVER;SILVERLIGHT</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net46' ">

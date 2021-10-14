@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>OpenRiaServices.Data.DomainServices</RootNamespace>
+    <AssemblyName>OpenRiaServices.Data.DomainServices</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<DefineSilverlight>true</DefineSilverlight>
+    <DefineConstants>$(DefineConstants);HAS_COLLECTIONVIEW</DefineConstants>
+    <SignAssembly>false</SignAssembly>
+    <PackageId>OpenSilver.OpenRiaServices.Data.DomainServices</PackageId>
+    <Authors>Userware</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OpenRiaServices.DomainServices.Client\Framework\OpenRiaServices.DomainServices.Client.csproj" />
+  </ItemGroup>
+  
+</Project>
